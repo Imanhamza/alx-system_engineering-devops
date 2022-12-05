@@ -1,2 +1,2 @@
 #!/bin/bash
-cat iacta | uniq -c 3
+cat iacta | head -n 3 | tail -n 1
