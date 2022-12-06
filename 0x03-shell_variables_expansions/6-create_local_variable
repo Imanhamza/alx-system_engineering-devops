@@ -1,2 +1,2 @@
 #!/bin/bash
-set -u BEST="School"
+BEST="School"
