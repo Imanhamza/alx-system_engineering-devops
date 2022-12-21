@@ -21,10 +21,10 @@
 3. [The long format](./3-listfiles) : A script that displays the current directory contents in a long format.
 4. [Hidden files](./4-listmorefiles) : A script that displays the current directory contents including hidden files.
 5. [I loce numbers](./5-listfilesdigitonly) : A script that displays the current directory contents, using long format, while displaying group IDs in numeral and show hidden files.
-6. [Welcome holberton](./6-firstdirectory) : A script that will create a directory named `holberton` in the `/tmp/` directory.
-7. [Betty in Holberton](./7-movethatfile) : A scipt that will move a file called `betty` from home to the new directory created above.
+6. [Welcome](./6-firstdirectory) : A script that will create a directory named `my_first_directory` in the `/tmp/` directory.
+7. [Betty in my first directory](./7-movethatfile) : A scipt that will move a file called `betty` from home to the new directory created above.
 8. [Bye bye Betty](./8-firstdelete) : A script that will delete file `betty` from the new location.
-9. [Bye bye Holberton](./9-firstdirdeletion) : A script that will delete the directory `holberton` that is in the `/tmp/` directory path.
+9. [Bye bye  My first directory](./9-firstdirdeletion) : A script that will delete the directory `my_first_directory` that is in the `/tmp/` directory path.
 10. [Back to the future](./10-back) Changing working directory to the previous one.
 11. [Lists](./11-lists) List all files (*even ones with names beginning with a period character, which are normally hidden*) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
 12. [File type](./12-file_type) A script that prints the type of the named file `iamafile`. The `iamafile` will be in the `/tmp/` directory when we will run your script.
