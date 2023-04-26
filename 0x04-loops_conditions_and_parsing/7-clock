@@ -7,8 +7,10 @@ i=0
 
 while ((i < 13)); do
 	echo Hour: $i
-	for ((j = 1; j < 60; j++)); do
+	j=1
+	while ((j < 60)); do
 		echo $j
+		((j++))
 	done
 	((i++))
 done
