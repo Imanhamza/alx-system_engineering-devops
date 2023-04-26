@@ -7,11 +7,11 @@
 i=1
 while ((i < 101)); do
 	if ((i%3 == 0)); then
-		echo Fizz
+		echo "Fizz"
 	elif ((i % 5 == 0)); then
-		echo Buzz
+		echo "Buzz"
 	elif ((i%15 == 0)); then
-		echo FizzBuzz
+		echo "FizzBuzz"
 	else
 		echo $i
 	fi
