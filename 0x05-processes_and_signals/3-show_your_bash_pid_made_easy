@@ -5,5 +5,5 @@
 processes=$(pgrep -f bash)
 
 for process in $processes; do
-	echo $process bash
+	echo "$process" bash
 done
