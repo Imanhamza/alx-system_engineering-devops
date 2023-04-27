@@ -2,6 +2,4 @@
 # a Bash script that stops 4-to_infinity_and_beyond process.
 file=$(pgrep "4-to_infinity_and_beyond")
 
-if [ -n "$file" ] ; then
-	kill "$file"
-fi
+$file | xargs kill
