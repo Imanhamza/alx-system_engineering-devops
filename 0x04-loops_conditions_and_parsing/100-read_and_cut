@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# a Bash script that displays the content of the file /etc/passwd.
+
+fopen="/etc/passwd"
+
+while read -r fopen; do
+	echo "$fopen" | cut -d ":" -f1,3,6
+done < "$fopen"
