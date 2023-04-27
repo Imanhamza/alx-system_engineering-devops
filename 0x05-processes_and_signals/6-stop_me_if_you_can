@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # a Bash script that stops 4-to_infinity_and_beyond process without using kill
 
-file=$(-f 4-to_infinity_and_beyond)
-
-pkill "$file"
+pkill -f 4-to_infinity_and_beyond
