@@ -15,4 +15,7 @@
 |**File**|**Discription**|
 |---|---|
 |[SSH RSA](./0-RSA_public_key.pub)| A file contain the **Public key**.
-|
+|[For Loop](./1-for_best_school)| A Bash script that displays `Best School` 10 times using `for` loop.
+|[While Loop](./2-while_best_school)| A Bash script that displays `Best School` 10 times using `while` loop.
+|[Until Loop](./3-until_best_school)| A Bash script that displays `Best School` 10 times using `until` loop.
+|[Say Hi!](./4-if_9_say_hi)| A Bash script that displays `Best School` 10 times, but for the 9th iteration, displays `Best School` and then `Hi` on a new line, using `while` loop and `if` statement.
