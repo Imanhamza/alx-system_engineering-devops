@@ -10,7 +10,7 @@
 file="/var/run/myscript.pid"
 echo $$ > "$file"
 
-trap 'rm -f "$file"' SIGQUIT SIGTERM
+trap 'rm -f "$file" exit 1' SIGQUIT SIGTERM
 while true; do
 	echo "To infinity and beyond"
 	sleep 1
