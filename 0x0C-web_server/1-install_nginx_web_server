@@ -6,16 +6,7 @@ sudo apt-get update
 sudo apt-get install -y nginx
 
 # Listen to the port 80
-echo "server {
-      listen 80 default_server;
-      listen [::]:80 default_server;
-      root /var/www/html;
-      index index.html;
-      server_name _;
-      location / {
-          return 200 'Hello World!';
-      }
-}"
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
 # Start service
 sudo service nginx start
