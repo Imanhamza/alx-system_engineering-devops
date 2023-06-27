@@ -1,4 +1,5 @@
-sh script that transfers a file from our client to a server
+#!/usr/bin/env bash
+# sh script that transfers a file from our client to a server
 
 # Check if all parameters are found
 if [ $# -lt 4 ]; then
