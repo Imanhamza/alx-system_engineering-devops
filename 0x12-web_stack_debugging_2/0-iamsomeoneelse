@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A Bash script to stimulate whoami
+sudo -u "$1" whoami
