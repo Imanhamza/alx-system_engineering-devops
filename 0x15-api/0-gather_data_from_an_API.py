@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # print(len(completed_tasks));
 
     user_name = user.get("name")
-    print("Employee {} is done with tasks ({}/{}):".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         user_name, len(completed_tasks), len(todos_list)))
 
     for task in completed_tasks:
