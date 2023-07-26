@@ -8,14 +8,17 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    _url = "https://jsonplaceholder.typicode.com/"
+    _url = 'https://jsonplaceholder.typicode.com/'
     user = requests.get(f"{_url}users/{argv[1]}").json()
-    todos_list = requests.get(f"{_url}todos?userId:{argv[1]}").json()
+    todos_list = requests.get(
+            _url + "todos", params={"userId": argv[1]}).json()
+    # print(len(todos_list))
 
     completed_tasks = []
     for task in todos_list:
-        if task.get("completed"):
+        if task['completed'] is True:
             completed_tasks.append(task)
+    # print(len(completed_tasks));
 
     user_name = user.get("name")
     print("Employee {} is done with tasks ({}/{}):".format(
