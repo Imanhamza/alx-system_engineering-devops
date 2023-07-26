@@ -3,9 +3,9 @@
 Python script that, using this REST API, for a given employee ID,
 returns information about his/her TODO list progress.
 '''
-import requests
-from sys import argv
 import csv
+from sys import argv
+import requests
 
 
 if __name__ == "__main__":
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     userName = user['username']
 
     with open("{}.csv".format(argv[1]), "w", newline="") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
 
         for todo in todos_list:
             writer.writerow(
