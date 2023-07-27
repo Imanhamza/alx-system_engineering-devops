@@ -22,4 +22,5 @@ if __name__ == "__main__":
                     "task": todo['title'],
                     "completed": todo['completed']}
             _list.append(_dict)
+        for user in users:
             json.dump({user['id']: _list}, file)
