@@ -14,13 +14,13 @@ if __name__ == "__main__":
             _url + "todos", params={"userId": argv[1]}).json()
     # print(todos_list[1])
 
-    filename = argv[1] + ".json"
     username = user['username']
-    with open(filename, mode="w") as file:
+    with open("{}.json".format(argv[1]), mode="w") as file:
+        _list = []
         for todo in todos_list:
-            json.dump({
-                argv[1]: [{
+            _dict = {
                     "task": todo['title'],
                     "completed": todo['completed'],
-                    "username": username}]
-                }, file)
+                    "username": username}
+            _list.append(_dict)
+        json.dump({argv[1]: _list}, file)
