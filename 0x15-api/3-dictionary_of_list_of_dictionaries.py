@@ -14,6 +14,7 @@ if __name__ == "__main__":
     # print(users[1])
 
     with open("todo_all_employees.json", mode="w") as file:
+
         _list = []
         for user, todo in zip(users, todos_list):
             _dict = {
@@ -21,4 +22,4 @@ if __name__ == "__main__":
                     "task": todo['title'],
                     "completed": todo['completed']}
             _list.append(_dict)
-        json.dump({user['id']: _list}, file)
+            json.dump({user['id']: _list}, file)
