@@ -15,7 +15,7 @@ def top_ten(subreddit):
           10 hot posts
     '''
     headers = {'User-Agent': 'CustomAgent'}
-    url = f'https://www.reddit.com/r/{subreddit}/about.json'
+    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     parms = {'limit': 10}
 
     try:
