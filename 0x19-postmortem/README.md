@@ -1,7 +1,7 @@
 # My first postmortem
----
+
 ### Issue Summary:
-Outage Duration:(date), 14:30 - (date), 17:45 (UTC+2)
+Outage Duration:(date), 14:30 - (date), 17:45 (UTC+2)   
 Impact: Slow response and intermittent downtime for our e-commerce platform, affecting approximately 20% of users.
 
 ### Timeline:
