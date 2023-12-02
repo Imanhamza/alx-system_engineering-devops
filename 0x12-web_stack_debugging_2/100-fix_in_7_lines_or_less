@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Recreate firstt task
-sed -i 's/user\s*nginx;/user nginx;\n\nworker_processes auto;/g' /e\
-tc/nginx/nginx.conf
-sed -i 's/listen\s*80;/listen 8080;/g' /etc/nginx/conf.d/default.conf
-chown -R nginx:nginx /var/lib/nginx
-service nginx restart
